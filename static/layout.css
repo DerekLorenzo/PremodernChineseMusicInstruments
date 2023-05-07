@@ -1,0 +1,106 @@
+#home-2{
+	height: 125px;
+	display: block;
+	margin-left: 125px;
+	margin-right:  auto;
+	width: 175px;
+} 
+
+#home-3{
+	height: 125px;
+	display: block;
+	margin-left: -25px;
+	margin-right:  auto;
+	width: 175px;
+}
+
+#home-1{
+	height: 125px;
+	display: block;
+	margin-left: 250px;
+	margin-right:  auto;
+	width: 200px;
+
+}
+#id-selector{
+}
+
+#image-row{
+	height: 150px;
+}
+
+#question{
+	font-size: 20;
+}
+
+#description{
+	color: #6D6D6D;
+}
+
+#learn-button{
+	background-color: #b5cfa3;
+	border: #bdd6ac;
+	color: black;
+}
+
+.class-selector{
+}
+
+.btn{
+	color: #6D6D6D;
+}
+
+.padding{
+	padding-top: 10px;
+}
+
+.go-back{
+	background-color: #b5cfa3;
+	border-radius: 5px;
+	border: solid #6D6D6D 1px;
+	color: #6D6D6D;
+}
+
+.center{
+	text-align: center;
+}
+
+.border{
+	border: solid black 1px;
+}
+
+.title{
+	font-size: 26;
+	padding-bottom: 10px;
+}
+
+.description{
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.navbar{
+	background-color: #e1edd8;
+}
+
+.navbar-brand{
+	color: black;
+}
+
+.drop-answer{
+	height: 50px;
+	border: 1px solid gray;
+}
+
+.correct{
+	color: green;
+	font-weight: bold;
+}
+
+.incorrect{
+	color: red;
+}
+
+.ui-draggable{
+	z-index:999999;
+}
