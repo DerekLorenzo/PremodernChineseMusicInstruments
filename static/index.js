@@ -26,7 +26,6 @@ const links = [
     }
 ];
 
-
 const wheel = document.querySelector(".wheel");
 const totalLinks = links.length;
 const degrees = 360 / totalLinks;
@@ -39,6 +38,7 @@ links.forEach((link, index) => {
 
   const imgElement = document.createElement("img");
   imgElement.src = link.image;
+  imgElement.classList.add("link-image");
 
   const titleElement = document.createElement("p");
   titleElement.classList.add("link-title");
@@ -52,6 +52,19 @@ links.forEach((link, index) => {
 function rotateWheel(deg) {
   currentRotation += deg;
   wheel.style.transform = `rotate(${currentRotation}deg)`;
+
+  const links = document.querySelectorAll(".link");
+  links.forEach((link) => {
+    const linkRect = link.getBoundingClientRect();
+    const wheelRect = wheel.getBoundingClientRect();
+    const centerX = wheelRect.left + wheelRect.width / 2;
+    const linkCenterX = linkRect.left + linkRect.width / 2;
+    const distanceFromCenter = Math.abs(centerX - linkCenterX);
+    const maxDistanceFromCenter = wheelRect.width / 2 - linkRect.width / 2;
+    const distanceRatio = distanceFromCenter / maxDistanceFromCenter;
+    const scale = 1 - distanceRatio * 0.5;
+    link.style.transform = `scale(${scale})`;
+  });
 }
 
 document.addEventListener("mousemove", (event) => {
