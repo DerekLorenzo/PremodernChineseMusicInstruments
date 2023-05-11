@@ -65,6 +65,7 @@
 .flip-card-back {
 	background-color: #09866c;
 	color: white;
+	font-family: "Times New Roman", Times, serif;
 	transform: rotateY(180deg);
 	display: flex;
 	align-items: center;
