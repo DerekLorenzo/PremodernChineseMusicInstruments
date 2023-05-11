@@ -1,27 +1,10 @@
-const events = document.querySelectorAll('.event');
-const timelineIndicator = document.querySelector('.timeline-indicator');
+// Get all timeline items
+var timelineItems = document.querySelectorAll('.timeline-item');
 
-let activeEventIndex = 0;
-
-events.forEach((event, index) => {
-  event.addEventListener('click', () => {
-    activeEventIndex = index;
-    updateActiveEvent();
+// Iterate over each item and add click event listener
+timelineItems.forEach(function(item) {
+  item.addEventListener('click', function() {
+    // Do something when item is clicked
+    console.log('Clicked on timeline item ' + item.id);
   });
 });
-
-function updateActiveEvent() {
-  events.forEach((event, index) => {
-    if (index === activeEventIndex) {
-      event.classList.add('active');
-    } else {
-      event.classList.remove('active');
-    }
-  });
-  
-  const timelineWidth = timelineIndicator.parentNode.clientWidth;
-  const indicatorPosition = activeEventIndex / (events.length - 1) * timelineWidth;
-  timelineIndicator.style.transform = `translateX(${indicatorPosition}px)`;
-}
-
-updateActiveEvent();
