@@ -20,7 +20,7 @@
   
 .flip-card {
 	position: relative;
-	height: 300;
+	height: 300px;
 	padding-bottom: 100%;
 	perspective: 1000px;
 	border-radius: 10px;
