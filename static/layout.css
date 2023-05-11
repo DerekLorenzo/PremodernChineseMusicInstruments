@@ -76,4 +76,50 @@
 .flip-card-back p {
 	margin: 0;
 }
+
+.bell-container {
+	position: relative;
+	width: 600px;
+	margin: 0 auto;
+}
+  
+.bell-container img {
+	display: block;
+	width: 100%;
+}
+  
+.bell-container .indicator {
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	background-color: #f00;
+	opacity: 0;
+	transition: opacity 0.3s;
+}
+  
+.bell-container .indicator.indicator1 {
+	top: 150px;
+	left: 340px;
+}
+  
+.bell-container .indicator.indicator2 {
+	top: 220px;
+	left: 310px;
+}
+  
+.bell-container .indicator.indicator3 {
+	top: 220px;
+	left: 410px;
+}
+  
+.bell-container .indicator.active {
+	opacity: 1;
+}
+  
+@media (max-width: 767px) {
+	.bell-container {
+		width: 100%;
+	}
+}  
   
