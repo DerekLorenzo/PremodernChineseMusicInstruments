@@ -28,7 +28,7 @@ window.onload = function () {
             };
             window.onresize = this.resize;
         },
-        imageMap = new ImageMap(document.getElementById('map_ID'));
+        imageMap = new ImageMap(document.getElementById('map-id'));
     imageMap.resize();
 }
 
