@@ -26,9 +26,11 @@ const links = [
     }
 ];
 
+
 const wheel = document.querySelector(".wheel");
 const totalLinks = links.length;
 const degrees = 360 / totalLinks;
+const radius = wheel.clientWidth / 2;
 
 links.forEach((link, index) => {
   const linkElement = document.createElement("a");
@@ -46,42 +48,40 @@ links.forEach((link, index) => {
   linkElement.appendChild(titleElement);
   wheel.appendChild(linkElement);
 
-  linkElement.addEventListener("click", () => {
+  linkElement.addEventListener("mouseenter", () => {
     const activeLink = document.querySelector(".link.active");
     if (activeLink) {
       activeLink.classList.remove("active");
     }
     linkElement.classList.add("active");
   });
+
+  linkElement.addEventListener("click", () => {
+    window.location.href = link.link;
+  });
 });
 
-let activeLinkIndex = 0;
-
-function updateWheel() {
-  const currentActiveLink = document.querySelector(".link.active");
-  if (currentActiveLink) {
-    currentActiveLinkIndex = Array.from(wheel.children).indexOf(currentActiveLink);
-    activeLinkIndex = currentActiveLinkIndex;
+wheel.addEventListener("mousemove", (event) => {
+  const rect = wheel.getBoundingClientRect();
+  const x = event.clientX - rect.left - radius;
+  const y = event.clientY - rect.top - radius;
+  const theta = Math.atan2(y, x);
+  let angle = theta * (180 / Math.PI) + 90;
+  if (angle < 0) {
+    angle = 360 + angle;
   }
-
-  const nextActiveLinkIndex = (activeLinkIndex + 1) % totalLinks;
-  const nextActiveLink = wheel.children[nextActiveLinkIndex];
-
-  for (let i = 0; i < totalLinks; i++) {
-    const link = wheel.children[i];
-    const linkRotation = link.style.transform.replace("rotate(", "").replace("deg)", "");
-    const newRotation = parseInt(linkRotation) - degrees;
-
-    link.style.transform = `rotate(${newRotation}deg)`;
-
-    if (link === nextActiveLink) {
-      link.classList.add("active");
-    } else {
-      link.classList.remove("active");
-    }
+  const index = Math.floor(angle / degrees);
+  const activeLink = document.querySelector(".link.active");
+  if (activeLink) {
+    activeLink.classList.remove("active");
   }
+  const newActiveLink = wheel.children[index];
+  newActiveLink.classList.add("active");
+});
 
-  activeLinkIndex = nextActiveLinkIndex;
-}
-
-setInterval(updateWheel, 3000);
+wheel.addEventListener("mouseleave", () => {
+  const activeLink = document.querySelector(".link.active");
+  if (activeLink) {
+    activeLink.classList.remove("active");
+  }
+});
