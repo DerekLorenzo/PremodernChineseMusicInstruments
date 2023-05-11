@@ -55,8 +55,8 @@
   
 .flip-card-front img {
 	display: block;
-	width: 100%;
-	height: auto;
+	height: 100%;
+	width: auto;
 }
   
 .flip-card-back {
