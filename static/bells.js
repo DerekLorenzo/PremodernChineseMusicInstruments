@@ -26,4 +26,5 @@ for (let i = 0; i < bellAreas.length; i++) {
     sound.currentTime = 0;
     sound.play();
   });
+  console.log("done")
 }
