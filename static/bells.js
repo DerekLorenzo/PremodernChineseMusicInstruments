@@ -4,7 +4,7 @@ const bellIndicators = [];
 console.log(bellAreas.length)
 
 window.onload = function () {
-    var ImageMap = function (map) {
+    var ImageMap = function (map, img) {
         var n,
             areas = map.getElementsByTagName('area'),
             len = areas.length,
@@ -15,7 +15,7 @@ window.onload = function () {
         }
         this.resize = function () {
             var n, m, clen,
-                x = document.body.clientWidth / previousWidth;
+                x = img.offsetWidth / previousWidth;
             for (n = 0; n < len; n++) {
                 clen = coords[n].length;
                 for (m = 0; m < clen; m++) {
@@ -28,7 +28,7 @@ window.onload = function () {
         };
         window.onresize = this.resize;
     },
-    imageMap = new ImageMap(document.getElementById('map-id'));
+    imageMap = new ImageMap(document.getElementById('map-id'), document.getElementById('interactive-bell'));
     imageMap.resize();
 }
 
