@@ -11,8 +11,8 @@ for (let i = 0; i < bellAreas.length; i++) {
 
   const indicator = document.createElement('div');
   indicator.classList.add('bell-indicator');
-  indicator.style.left = `${centerX}px`;
-  indicator.style.top = `${centerY}px`;
+  indicator.style.left = `${x}px`;
+  indicator.style.top = `${y}px`;
   area.parentNode.appendChild(indicator);
   bellIndicators.push(indicator);
 
