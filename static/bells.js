@@ -1,3 +1,4 @@
+console.log("loaded bells.js")
 const bellAreas = document.querySelectorAll('.bell-area');
 const bellIndicators = [];
 
