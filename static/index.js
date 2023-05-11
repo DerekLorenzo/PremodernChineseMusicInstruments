@@ -1,27 +1,27 @@
 const links = [
     {
       title: "Guqin",
-      image: "images/guqin.jpg",
+      image: "PremodernChineseMusicInstruments/images/guqin.jpg",
       link: "guqin.html"
     },
     {
       title: "Bells",
-      image: "images/bells.jpg",
+      image: "PremodernChineseMusicInstruments/images/bells.jpg",
       link: "bells.html"
     },
     {
       title: "Pipa",
-      image: "images/guqin.jpg",
+      image: "PremodernChineseMusicInstruments/images/guqin.jpg",
       link: "pipa.html"
     },
     {
       title: "Dizi",
-      image: "images/bells.jpg",
+      image: "PremodernChineseMusicInstruments/images/bells.jpg",
       link: "#"
     },
     {
       title: "Placeholder",
-      image: "images/guqin.jpg",
+      image: "PremodernChineseMusicInstruments/images/guqin.jpg",
       link: "guqin.html"
     }
 ];
