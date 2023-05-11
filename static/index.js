@@ -17,7 +17,7 @@ const links = [
     {
       title: "Dizi",
       image: "images/bells.jpg",
-      link: "#"
+      link: "dizi.html"
     },
     {
       title: "Placeholder",
