@@ -25,6 +25,7 @@ window.onload = function () {
             }
             previousWidth = document.body.clientWidth;
             return true;
+            console.log("resized")
         };
         window.onresize = this.resize;
     },
