@@ -30,7 +30,7 @@ const links = [
 const wheel = document.querySelector(".wheel");
 const totalLinks = links.length;
 const degrees = 360 / totalLinks;
-const radius = wheel.clientWidth / 2;
+let currentRotation = 0;
 
 links.forEach((link, index) => {
   const linkElement = document.createElement("a");
@@ -47,41 +47,25 @@ links.forEach((link, index) => {
   linkElement.appendChild(imgElement);
   linkElement.appendChild(titleElement);
   wheel.appendChild(linkElement);
-
-  linkElement.addEventListener("mouseenter", () => {
-    const activeLink = document.querySelector(".link.active");
-    if (activeLink) {
-      activeLink.classList.remove("active");
-    }
-    linkElement.classList.add("active");
-  });
-
-  linkElement.addEventListener("click", () => {
-    window.location.href = link.link;
-  });
 });
 
-wheel.addEventListener("mousemove", (event) => {
-  const rect = wheel.getBoundingClientRect();
-  const x = event.clientX - rect.left - radius;
-  const y = event.clientY - rect.top - radius;
-  const theta = Math.atan2(y, x);
-  let angle = theta * (180 / Math.PI) + 90;
-  if (angle < 0) {
-    angle = 360 + angle;
-  }
-  const index = Math.floor(angle / degrees);
-  const activeLink = document.querySelector(".link.active");
-  if (activeLink) {
-    activeLink.classList.remove("active");
-  }
-  const newActiveLink = wheel.children[index];
-  newActiveLink.classList.add("active");
+function rotateWheel(deg) {
+  currentRotation += deg;
+  wheel.style.transform = `rotate(${currentRotation}deg)`;
+}
+
+document.addEventListener("mousemove", (event) => {
+  const wheelRect = wheel.getBoundingClientRect();
+  const centerX = wheelRect.left + wheelRect.width / 2;
+  const mouseY = event.clientY;
+  
+  const degPerPixel = 360 / wheelRect.height;
+  const degToRotate = (mouseY - centerX) * degPerPixel;
+  
+  rotateWheel(degToRotate);
 });
 
-wheel.addEventListener("mouseleave", () => {
-  const activeLink = document.querySelector(".link.active");
-  if (activeLink) {
-    activeLink.classList.remove("active");
-  }
+document.addEventListener("mouseleave", () => {
+  rotateWheel(-currentRotation);
+  currentRotation = 0;
 });
