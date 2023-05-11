@@ -1,10 +1,8 @@
-// Get all timeline items
-var timelineItems = document.querySelectorAll('.timeline-item');
+const events = document.querySelectorAll('.event');
 
-// Iterate over each item and add click event listener
-timelineItems.forEach(function(item) {
-  item.addEventListener('click', function() {
-    // Do something when item is clicked
-    console.log('Clicked on timeline item ' + item.id);
+events.forEach(event => {
+  event.addEventListener('click', () => {
+    // Do something when event is clicked
+    console.log(`Event ${event.id} clicked`);
   });
 });
