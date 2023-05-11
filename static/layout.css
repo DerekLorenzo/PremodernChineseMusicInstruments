@@ -41,6 +41,7 @@
 .flip-card-front {
 	background-color: #bbb;
 	color: black;
+	object-fit: contain;
 }
 
 .flip-card-back {
