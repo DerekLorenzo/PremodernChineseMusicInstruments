@@ -24,8 +24,8 @@ window.onload = function () {
                 areas[n].coords = coords[n].join(',');
             }
             previousWidth = document.body.clientWidth;
-            return true;
             console.log("resized")
+            return true;
         };
         window.onresize = this.resize;
     },
