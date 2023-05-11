@@ -1,25 +1,27 @@
-var timelineItems = document.querySelectorAll('.timeline-item');
+const events = document.querySelectorAll('.event');
+const timelineIndicator = document.querySelector('.timeline-indicator');
 
-function isInViewport(el) {
-  var rect = el.getBoundingClientRect();
-  return (
-    rect.top >= 0 &&
-    rect.left >= 0 &&
-    rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
-    rect.right <= (window.innerWidth || document.documentElement.clientWidth)
-  );
-}
+let activeEventIndex = 0;
 
-function animateTimelineItems() {
-  for (var i = 0; i < timelineItems.length; i++) {
-    if (isInViewport(timelineItems[i])) {
-      timelineItems[i].classList.add('animate');
-    }
-  }
-}
-
-animateTimelineItems();
-
-window.addEventListener('scroll', function() {
-  animateTimelineItems();
+events.forEach((event, index) => {
+  event.addEventListener('click', () => {
+    activeEventIndex = index;
+    updateActiveEvent();
+  });
 });
+
+function updateActiveEvent() {
+  events.forEach((event, index) => {
+    if (index === activeEventIndex) {
+      event.classList.add('active');
+    } else {
+      event.classList.remove('active');
+    }
+  });
+  
+  const timelineWidth = timelineIndicator.parentNode.clientWidth;
+  const indicatorPosition = activeEventIndex / (events.length - 1) * timelineWidth;
+  timelineIndicator.style.transform = `translateX(${indicatorPosition}px)`;
+}
+
+updateActiveEvent();
