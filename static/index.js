@@ -26,23 +26,30 @@ const links = [
     }
 ];
 
-const wheelContainer = document.querySelector(".wheel-container");
+const wheel = document.querySelector(".wheel");
+const totalLinks = links.length;
+const degrees = 360 / totalLinks;
 
 links.forEach((link, index) => {
-    const linkElement = document.createElement("a");
-    linkElement.href = link.link;
+    const linkElement = document.createElement("div");
+    linkElement.classList.add("link");
+    linkElement.style.transform = `rotate(${degrees * index}deg)`;
 
     const imgElement = document.createElement("img");
     imgElement.src = link.image;
-    imgElement.alt = link.title;
-    imgElement.classList.add("link-image");
-    linkElement.appendChild(imgElement);
-
-    const titleElement = document.createElement("span");
-    titleElement.textContent = link.title;
+    const titleElement = document.createElement("p");
     titleElement.classList.add("link-title");
-    linkElement.appendChild(titleElement);
+    titleElement.innerText = link.title;
 
-    wheelContainer.appendChild(linkElement);
-    console.log("done")
+    linkElement.appendChild(imgElement);
+    linkElement.appendChild(titleElement);
+    wheel.appendChild(linkElement);
+
+    linkElement.addEventListener("click", () => {
+        const activeLink = document.querySelector(".link.active");
+        if (activeLink) {
+            activeLink.classList.remove("active");
+        }
+        linkElement.classList.add("active");
+    });
 });
