@@ -55,11 +55,10 @@
   
 .flip-card-front img {
 	display: block;
-}
-
-.img {
-	height: 300px;
-	width: 400px;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: center;
 }
   
 .flip-card-back {
