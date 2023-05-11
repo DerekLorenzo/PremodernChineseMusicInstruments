@@ -44,4 +44,5 @@ links.forEach((link, index) => {
     linkElement.appendChild(titleElement);
 
     wheelContainer.appendChild(linkElement);
+    console.log("done")
 });
