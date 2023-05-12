@@ -121,9 +121,9 @@
 .left-side-area {
 	position: absolute;
 	top: 65%;
-	bottom: 25%;
-	left: 20%;
-	right: 70%;
+	bottom: 15%;
+	left: 25%;
+	right: 72%;
 	background-color: rgba(0, 0, 0, 0);
 	cursor: pointer;
 }
@@ -131,19 +131,19 @@
 .right-side-area {
 	position: absolute;
 	top: 65%;
-	bottom: 25%;
-	left: 70%;
-	right: 20%;
+	bottom: 15%;
+	left: 72%;
+	right: 25%;
 	background-color: rgba(0, 0, 0, 0);
 	cursor: pointer;
 }
   
 .center-area {
 	position: absolute;
-	top: 10%;
-	bottom: 80%;
-	left: 30%;
-	right: 30%;
+	top: 65%;
+	bottom: 25%;
+	left: 33%;
+	right: 33%;
 	background-color: rgba(0, 0, 0, 0);
 	cursor: pointer;
 }
