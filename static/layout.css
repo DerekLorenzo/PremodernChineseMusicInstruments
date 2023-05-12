@@ -326,31 +326,24 @@
 	border-radius: 50%;
 }
 
-.label {
-	display: none;
-	position: absolute;
-	top: 100;
-	left: 100;
-	z-index: 1;
-	background-color: #fff;
-	border: 1px solid #ccc;
-	padding: 10px;
-	border-radius: 10px;
-}
-  
-.label h4 {
-	margin-top: 0;
-}
-  
 .instrument-point {
 	position: absolute;
-	z-index: 2;
 	width: 10px;
 	height: 10px;
+	background-color: red;
 	border-radius: 50%;
-	background-color: #000;
 	cursor: pointer;
 }
+  
+.label {
+	position: absolute;
+	width: 200px;
+	padding: 10px;
+	background-color: white;
+	border: 1px solid black;
+	border-radius: 10px;
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}  
 
 .video-container {
 	position: relative;
