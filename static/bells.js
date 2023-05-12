@@ -1,6 +1,6 @@
 // Load the audio files
-var sideSound = new Audio('sounds/bells-1.mp3');
-var centerSound = new Audio('sounds/bells-2.mp3');
+var sideSound = new Audio('sounds/side-bell.mp3');
+var centerSound = new Audio('sounds/center-bell.mp3');
 
 // Get the bell image and clickable areas
 var bell = document.getElementById('bell');
