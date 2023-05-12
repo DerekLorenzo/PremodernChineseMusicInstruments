@@ -274,10 +274,10 @@
 
 .top-left-area {
 	position: absolute;
-	top: 25%;
-	bottom: 72%;
-	left: 25%;
-	right: 72%;
+	top: 40%;
+	bottom: 57%;
+	left: 32%;
+	right: 65%;
 	background-color: rgba(9, 134, 108, 0.4);
 	cursor: pointer;
 	border-radius: 50%;
@@ -285,10 +285,10 @@
 
 .top-right-area {
 	position: absolute;
-	top: 25%;
-	bottom: 72%;
-	left: 72%;
-	right: 25%;
+	top: 40%;
+	bottom: 57%;
+	left: 65%;
+	right: 32%;
 	background-color: rgba(9, 134, 108, 0.4);
 	cursor: pointer;
 	border-radius: 50%;
@@ -296,10 +296,10 @@
 
 .middle-left-area {
 	position: absolute;
-	top: 47%;
-	bottom: 46%;
-	left: 25%;
-	right: 72%;
+	top: 60%;
+	bottom: 37%;
+	left: 32%;
+	right: 65%;
 	background-color: rgba(9, 134, 108, 0.4);
 	cursor: pointer;
 	border-radius: 50%;
@@ -307,10 +307,10 @@
 
 .middle-right-area {
 	position: absolute;
-	top: 47%;
-	bottom: 46%;
-	left: 72%;
-	right: 25%;
+	top: 60%;
+	bottom: 37%;
+	left: 65%;
+	right: 32%;
 	background-color: rgba(9, 134, 108, 0.4);
 	cursor: pointer;
 	border-radius: 50%;
@@ -318,10 +318,10 @@
 
 .bottom-left-area {
 	position: absolute;
-	top: 72%;
-	bottom: 25%;
-	left: 25%;
-	right: 72%;
+	top: 75%;
+	bottom: 22%;
+	left: 35%;
+	right: 62%;
 	background-color: rgba(9, 134, 108, 0.4);
 	cursor: pointer;
 	border-radius: 50%;
@@ -329,10 +329,10 @@
 
 .bottom-right-area {
 	position: absolute;
-	top: 72%;
-	bottom: 25%;
-	left: 72%;
-	right: 25%;
+	top: 75%;
+	bottom: 22%;
+	left: 62%;
+	right: 35%;
 	background-color: rgba(9, 134, 108, 0.4);
 	cursor: pointer;
 	border-radius: 50%;
