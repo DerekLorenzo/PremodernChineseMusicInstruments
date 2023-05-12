@@ -23,6 +23,8 @@
 }
 
 .title-text{
+	padding-top: 25px;
+	padding-bottom: 25px;
 	align-items: center;
 	justify-content: center;
 	text-align: center;
