@@ -128,10 +128,10 @@
   
 .center-area {
 	position: absolute;
-	top: 50%;
+	top: 10%;
 	left: 30%;
 	right: 30%;
-	bottom: 25%;
+	bottom: 80%;
 	background-color: rgba(0, 0, 0, 0);
 	cursor: pointer;
 }
