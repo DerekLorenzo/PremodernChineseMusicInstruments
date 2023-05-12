@@ -197,15 +197,14 @@
 .timeline-img {
 	position: absolute;
 	top: 0;
-	left: 50%;
-	width: 60px;
-	height: 60px;
-	margin-left: -30px;
+	width: 100px;
+	height: 100px;
 	background-size: cover;
 	background-position: center;
 	border-radius: 50%;
 	border: 4px solid #ccc;
 	transition: all 0.3s ease-in-out;
+	float: right;
 }
 
 .timeline-item:nth-child(1) .timeline-img {
@@ -230,7 +229,7 @@
   
 .timeline-content {
 	position: relative;
-	width: 45%;
+	width: calc(100% - 120px);
 	padding: 20px;
 	color: white;
 	background-color: #09866c;
@@ -239,6 +238,7 @@
 	transition: all 0.3s ease-in-out;
 	opacity: 0;
 	transform: translateY(50px);
+	float: left;
 }
   
 .timeline-title {
