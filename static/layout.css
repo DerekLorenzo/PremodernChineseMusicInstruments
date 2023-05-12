@@ -1,7 +1,7 @@
 #bell {
 	width: 100%;
 	height: auto;
-	border-radius: 50%;
+	border-radius: 10%;
 	max-width: 100%;
 	max-height: 100%;
 }
@@ -106,20 +106,31 @@
 	margin: 0;
 }
 
-.side-area {
+.left-side-area {
 	position: absolute;
-	top: 25%;
+	top: 65%;
 	bottom: 25%;
-	width: 20%;
+	left: 20%;
+	right: 30%;
+	background-color: rgba(0, 0, 0, 0);
+	cursor: pointer;
+}
+
+.right-side-area {
+	position: absolute;
+	top: 65%;
+	bottom: 25%;
+	left: 70%;
+	right: 80%;
 	background-color: rgba(0, 0, 0, 0);
 	cursor: pointer;
 }
   
 .center-area {
 	position: absolute;
-	top: 25%;
-	left: 25%;
-	right: 25%;
+	top: 50%;
+	left: 30%;
+	right: 30%;
 	bottom: 25%;
 	background-color: rgba(0, 0, 0, 0);
 	cursor: pointer;
