@@ -169,13 +169,14 @@
 }
   
 .timeline:before {
-	content: '';
+	content: "";
 	position: absolute;
 	top: 0;
 	bottom: 0;
+	right: 0; /* Set right to 0 to align the line with the right edge of the .timeline div */
 	width: 1px;
 	background-color: #ccc;
-	transform: translateX(-50%);
+	margin-right: -0.5px; /* To align the line perfectly with the right edge of the .timeline div */
 }
   
 .timeline-item {
