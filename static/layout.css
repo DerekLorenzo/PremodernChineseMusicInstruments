@@ -390,6 +390,10 @@
 	text-align: center;
 }
 
+.primary-color-text {
+	color: #09866c
+}
+
 .interactive-instructions {
 	color: darkgray;
 	font-size: smaller;
