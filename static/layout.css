@@ -396,8 +396,12 @@
 	color: #09866c
 }
 
-.inline {
+.inline-block {
 	display: inline-block;
+}
+
+.inline {
+	display: inline;
 }
 
 .interactive-instructions {
