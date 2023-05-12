@@ -124,7 +124,7 @@
 	bottom: 15%;
 	left: 25%;
 	right: 72%;
-	background-color: rgba(0, 0, 0, 0);
+	background-color: rgba(0, 0, 0, 0.2);
 	cursor: pointer;
 }
 
@@ -134,7 +134,7 @@
 	bottom: 15%;
 	left: 72%;
 	right: 25%;
-	background-color: rgba(0, 0, 0, 0);
+	background-color: rgba(0, 0, 0, 0.2);
 	cursor: pointer;
 }
   
@@ -144,7 +144,7 @@
 	bottom: 25%;
 	left: 33%;
 	right: 33%;
-	background-color: rgba(0, 0, 0, 0);
+	background-color: rgba(0, 0, 0, 0.2);
 	cursor: pointer;
 }
 
