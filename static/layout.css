@@ -22,6 +22,18 @@
 	background-position: center;
 }
 
+.title-text{
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+}
+
+.detail-text{
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+}
+
 .link {
 	position: relative;
 	display: flex;
