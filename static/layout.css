@@ -396,6 +396,10 @@
 	color: #09866c
 }
 
+.inline {
+	display: inline;
+}
+
 .interactive-instructions {
 	color: darkgray;
 	font-size: smaller;
