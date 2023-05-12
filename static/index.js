@@ -1,8 +1,12 @@
-document.querySelectorAll('.link').forEach(link => {
-    link.addEventListener('click', (event) => {
-      event.preventDefault();
-      const url = link.dataset.url;
-      window.location.href = url;
+const links = document.querySelectorAll('.link');
+
+links.forEach((link) => {
+    const title = link.querySelector('.link-title');
+    const image = link.querySelector('.link-image');
+
+    image.addEventListener('load', () => {
+        title.style.top = `${image.offsetHeight - title.offsetHeight}px`;
     });
-  });
+});
+
   
