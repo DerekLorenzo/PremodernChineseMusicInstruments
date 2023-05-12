@@ -390,6 +390,11 @@
 	text-align: center;
 }
 
+.interactive-instructions {
+	color: darkgray;
+	font-size: smaller;
+}
+
 .youtube-text{
 	font-family: "Times New Roman", Times, serif;
 	font-size: 14;
