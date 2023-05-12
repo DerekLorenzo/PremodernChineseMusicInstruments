@@ -18,6 +18,8 @@
 	position: relative;
 	border-radius: 10%;
 	overflow: hidden;
+	background-size: cover;
+	background-position: center;
 }
 
 .link {
@@ -330,7 +332,7 @@
 	padding: 10px;
 	border-radius: 10px;
 	background-color: #fff;
-	box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+	box-shadow: 0 0 10px rgba(150, 0, 0, 1);
 }
   
 .label h4 {
