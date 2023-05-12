@@ -332,8 +332,8 @@
 
 .instrument-point {
 	position: absolute;
-	width: 10px;
-	height: 10px;
+	width: 25px;
+	height: 25px;
 	background-color: red;
 	border-radius: 50%;
 	cursor: pointer;
