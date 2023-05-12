@@ -200,7 +200,7 @@
 }
 
 .timeline-item:nth-child(1) .timeline-img {
-	background-image: url('images/guqin.jpg');
+	background-image: url('../images/guqin.jpg');
 }
   
 .timeline-content {
