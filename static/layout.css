@@ -357,4 +357,12 @@
 	height: 100%;
 	border-radius: 10px;
 }
-  
+
+.youtube-text{
+	font-family: "Times New Roman", Times, serif;
+	font-size: 14;
+	font-weight: bolder;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+}
