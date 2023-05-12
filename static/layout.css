@@ -224,4 +224,70 @@
 	margin: 0;
 	font-size: 16px;
 	line-height: 1.5;
-}   
+}
+
+.top-left-area {
+	position: absolute;
+	top: 25%;
+	bottom: 72%;
+	left: 25%;
+	right: 72%;
+	background-color: rgba(9, 134, 108, 0.4);
+	cursor: pointer;
+	border-radius: 50%;
+}
+
+.top-right-area {
+	position: absolute;
+	top: 25%;
+	bottom: 72%;
+	left: 72%;
+	right: 25%;
+	background-color: rgba(9, 134, 108, 0.4);
+	cursor: pointer;
+	border-radius: 50%;
+}
+
+.middle-left-area {
+	position: absolute;
+	top: 47%;
+	bottom: 46%;
+	left: 25%;
+	right: 72%;
+	background-color: rgba(9, 134, 108, 0.4);
+	cursor: pointer;
+	border-radius: 50%;
+}
+
+.middle-right-area {
+	position: absolute;
+	top: 47%;
+	bottom: 46%;
+	left: 72%;
+	right: 25%;
+	background-color: rgba(9, 134, 108, 0.4);
+	cursor: pointer;
+	border-radius: 50%;
+}
+
+.bottom-left-area {
+	position: absolute;
+	top: 72%;
+	bottom: 25%;
+	left: 25%;
+	right: 72%;
+	background-color: rgba(9, 134, 108, 0.4);
+	cursor: pointer;
+	border-radius: 50%;
+}
+
+.bottom-right-area {
+	position: absolute;
+	top: 72%;
+	bottom: 25%;
+	left: 72%;
+	right: 25%;
+	background-color: rgba(9, 134, 108, 0.4);
+	cursor: pointer;
+	border-radius: 50%;
+}
