@@ -124,8 +124,8 @@
 	top: 65%;
 	bottom: 15%;
 	left: 25%;
-	right: 72%;
-	background-color: rgba(9, 134, 108, 0.3);
+	right: 68%;
+	background-color: rgba(9, 134, 108, 0.4);
 	cursor: pointer;
 	border-radius: 20%;
 }
@@ -134,20 +134,20 @@
 	position: absolute;
 	top: 65%;
 	bottom: 15%;
-	left: 72%;
+	left: 68%;
 	right: 25%;
-	background-color: rgba(9, 134, 108, 0.3);
+	background-color: rgba(9, 134, 108, 0.4);
 	cursor: pointer;
 	border-radius: 20%;
 }
   
 .center-area {
 	position: absolute;
-	top: 65%;
-	bottom: 25%;
-	left: 33%;
-	right: 33%;
-	background-color: rgba(9, 134, 108, 0.3);
+	top: 70%;
+	bottom: 15%;
+	left: 35%;
+	right: 35%;
+	background-color: rgba(9, 134, 108, 0.4);
 	cursor: pointer;
 	border-radius: 20%;
 }
