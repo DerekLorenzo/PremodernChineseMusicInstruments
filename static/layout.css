@@ -211,6 +211,22 @@
 .timeline-item:nth-child(1) .timeline-img {
 	background-image: url('../images/guqin.jpg');
 }
+
+.timeline-item:nth-child(2) .timeline-img {
+	background-image: url('../images/guqin.jpg');
+}
+
+.timeline-item:nth-child(3) .timeline-img {
+	background-image: url('../images/guqin.jpg');
+}
+
+.timeline-item:nth-child(4) .timeline-img {
+	background-image: url('../images/guqin.jpg');
+}
+
+.timeline-item:nth-child(5) .timeline-img {
+	background-image: url('../images/guqin.jpg');
+}
   
 .timeline-content {
 	position: relative;
