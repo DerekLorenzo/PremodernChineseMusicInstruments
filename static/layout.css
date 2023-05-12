@@ -16,7 +16,7 @@
 
 #pipa {
 	position: relative;
-	border-radius: 10%;
+	border-radius: 50px;
 	overflow: hidden;
 	background-size: cover;
 	background-position: center;
