@@ -1,6 +1,7 @@
-#interactive-bell{
+#bell {
 	width: 100%;
-	object-fit: contain;
+	height: auto;
+	border-radius: 50%;
 }
 
 .link {
@@ -103,17 +104,23 @@
 	margin: 0;
 }
 
-.bell-area {
+.side-area {
+	position: absolute;
+	top: 25%;
+	bottom: 25%;
+	width: 20%;
+	background-color: rgba(0, 0, 0, 0);
 	cursor: pointer;
-	outline: none;
 }
   
-.bell-indicator {
+.center-area {
 	position: absolute;
-	width: 20px;
-	height: 20px;
-	border-radius: 50%;
-	background-color: rgba(255, 0, 0, 0.5);
+	top: 25%;
+	left: 25%;
+	right: 25%;
+	bottom: 25%;
+	background-color: rgba(0, 0, 0, 0);
+	cursor: pointer;
 }
 
 .timeline-event:hover .timeline-content {
