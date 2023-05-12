@@ -124,8 +124,9 @@
 	bottom: 15%;
 	left: 25%;
 	right: 72%;
-	background-color: rgba(0, 0, 0, 0.2);
+	background-color: rgba(9, 134, 108, 0.3);
 	cursor: pointer;
+	border-radius: 20%;
 }
 
 .right-side-area {
@@ -134,8 +135,9 @@
 	bottom: 15%;
 	left: 72%;
 	right: 25%;
-	background-color: rgba(0, 0, 0, 0.2);
+	background-color: rgba(9, 134, 108, 0.3);
 	cursor: pointer;
+	border-radius: 20%;
 }
   
 .center-area {
@@ -144,8 +146,9 @@
 	bottom: 25%;
 	left: 33%;
 	right: 33%;
-	background-color: rgba(0, 0, 0, 0.2);
+	background-color: rgba(9, 134, 108, 0.3);
 	cursor: pointer;
+	border-radius: 20%;
 }
 
 .timeline-event:hover .timeline-content {
