@@ -417,7 +417,7 @@
 
 .wrap {
     inline-size: 150px;
-    word-break: break-all;
+    overflow-wrap: break-word;
 }
 
 .youtube-text{
