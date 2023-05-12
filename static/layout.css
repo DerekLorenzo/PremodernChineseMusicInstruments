@@ -397,7 +397,7 @@
 }
 
 .inline {
-	display: inline;
+	display: inline-block;
 }
 
 .interactive-instructions {
