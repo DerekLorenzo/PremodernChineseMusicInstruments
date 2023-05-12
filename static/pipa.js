@@ -1,23 +1,19 @@
-// Get the instrument image element and all label elements
-const instrumentImage = document.getElementById("pipa");
-const labels = document.querySelectorAll(".label");
+// Get all the clickable points on the image
+const instrumentPoints = document.querySelectorAll('.instrument-point');
 
-// Loop through each label element and add a click event listener to it
-labels.forEach((label) => {
-  const point = document.createElement("div");
-  point.classList.add("point");
-  instrumentImage.appendChild(point);
+// Loop through the clickable points and add a click event listener to each of them
+instrumentPoints.forEach(point => {
+  point.addEventListener('click', () => {
+    // Get the corresponding label element for the clicked point
+    const label = document.getElementById(point.dataset.label);
 
-  point.style.top = label.dataset.top + "px";
-  point.style.left = label.dataset.left + "px";
-  
-  point.addEventListener("click", () => {
-    if (label.style.display === "none") {
-      // Show the label if it's hidden
-      label.style.display = "block";
-    } else {
-      // Hide the label if it's visible
-      label.style.display = "none";
+    // If the label element is hidden, show it
+    if (label.style.display === 'none') {
+      label.style.display = 'block';
+    }
+    // Otherwise, hide it
+    else {
+      label.style.display = 'none';
     }
   });
 });
