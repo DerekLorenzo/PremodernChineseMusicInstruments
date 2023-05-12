@@ -14,7 +14,8 @@
 }
   
 .link-image {
-  	height: 100%;
+  	height: 150px;
+	width: 200px;
 	border-radius: 10%;
 	background-size: cover;
 	background-position: center;
