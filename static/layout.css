@@ -2,6 +2,20 @@
 	width: 100%;
 	object-fit: contain;
 }
+  
+.link-image {
+	height: 150px;
+	width: 150px;
+	border-radius: 50%;
+	background-size: cover;
+	background-position: center;
+	margin-bottom: 10px;
+}
+  
+.link-title {
+	text-align: center;
+	font-weight: bold;
+}  
 
 .navbar{
 	background-color: #09866c;
