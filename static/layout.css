@@ -339,17 +339,22 @@
 	margin-top: 0;
 }
 
-.iframe-wrapper {
+.video-container {
 	position: relative;
-	aspect-ratio: 16 / 9;
-	box-shadow: 0 0 6px rgb(0 0 0 / 50%);
-  
-	iframe {
-		position: absolute;
-		top: 0;
-		left: 0;
-		width: 100%;
-		height: 100%;
-	}
+	padding-bottom: 56.25%; /* 16:9 aspect ratio */
+	padding-top: 30px;
+	height: 0;
+	overflow: hidden;
+	border-radius: 10px;
+	box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+}
+
+.video-container iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	border-radius: 10px;
 }
   
