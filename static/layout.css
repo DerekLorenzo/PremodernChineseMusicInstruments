@@ -415,6 +415,11 @@
 	font-size: smaller;
 }
 
+.wrap {
+    inline-size: 150px;
+    overflow-wrap: break-word;
+}
+
 .youtube-text{
 	font-family: "Times New Roman", Times, serif;
 	font-size: 14;
