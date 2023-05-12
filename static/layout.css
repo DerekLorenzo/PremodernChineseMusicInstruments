@@ -353,6 +353,7 @@
   
 .label.active {
 	display: block;
+	transform: translate(-50%, -100%);
 }
   
 .label.active:before {
