@@ -326,6 +326,10 @@
 	border-radius: 50%;
 }
 
+.instrument-image {
+	border-radius: 50px;
+}
+
 .instrument-point {
 	position: absolute;
 	width: 10px;
