@@ -318,8 +318,8 @@
 
 .bottom-left-area {
 	position: absolute;
-	top: 75%;
-	bottom: 22%;
+	top: 80%;
+	bottom: 17%;
 	left: 35%;
 	right: 62%;
 	background-color: rgba(9, 134, 108, 0.4);
@@ -329,8 +329,8 @@
 
 .bottom-right-area {
 	position: absolute;
-	top: 75%;
-	bottom: 22%;
+	top: 80%;
+	bottom: 17%;
 	left: 62%;
 	right: 35%;
 	background-color: rgba(9, 134, 108, 0.4);
